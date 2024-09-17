@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <title>O Mistério da Mansão Antiga</title>
+</head>
+<body>
+    <main>
+        <div class="passo ativo" id="passo-0">
+            <img src="img/entrada-mansao.png" alt="Entrada da mansão antiga">
+            <p>Você recebeu um convite para investigar uma mansão antiga que está cheia de rumores sobre um misterioso desaparecimento. Ao chegar, você encontra a porta da mansão aberta e decide entrar.</p>
+            <button class="btn-proximo" data-proximo="1">Explorar o Hall de Entrada</button>
+            <button class="btn-proximo" data-proximo="2">Ir Direto para o Escritório</button>
+        </div>
+        <div class="passo" id="passo-1">
+            <p>No Hall de Entrada, você nota uma escada que leva ao segundo andar e duas portas: uma à esquerda e outra à direita. Qual delas você escolhe?</p>
+            <button class="btn-proximo" data-proximo="3">Entrar na porta à esquerda</button>
+            <button class="btn-proximo" data-proximo="4">Entrar na porta à direita</button>
+            <button class="btn-proximo" data-proximo="5">Subir as escadas</button>
+        </div>
+        <div class="passo" id="passo-2">
+            <p>O escritório está cheio de livros antigos e papéis espalhados. Em uma das mesas, você encontra um diário antigo. Deseja lê-lo?</p>
+            <button class="btn-proximo" data-proximo="6">Ler o diário</button>
+            <button class="btn-proximo" data-proximo="7">Procurar por documentos importantes na mesa</button>
+        </div>
+        <div class="passo" id="passo-3">
+            <p>Você entra na sala à esquerda e encontra uma biblioteca. No meio da sala, há uma estante que parece ter um livro fora do lugar. O que você faz?</p>
+            <button class="btn-proximo" data-proximo="8">Investigar o livro fora do lugar</button>
+            <button class="btn-proximo" data-proximo="9">Examinar a biblioteca em busca de algo suspeito</button>
+        </div>
+        <div class="passo" id="passo-4">
+            <p>A sala à direita parece ser uma sala de jantar antiga. Há uma mesa grande e vários cadeiras ao redor. Em uma das cadeiras, você encontra um bilhete. O que faz?</p>
+            <button class="btn-proximo" data-proximo="10">Ler o bilhete</button>
+            <button class="btn-proximo" data-proximo="11">Procurar por objetos suspeitos na sala</button>
+        </div>
+        <div class="passo" id="passo-5">
+            <p>No segundo andar, você encontra um corredor com vários quartos. Um deles está entreaberto. Você decide entrar e examinar o quarto.</p>
+            <button class="btn-proximo" data-proximo="12">Entrar no quarto</button>
+            <button class="btn-proximo" data-proximo="13">Continuar explorando o corredor</button>
+        </div>
+        <div class="passo" id="passo-6">
+            <p>O diário revela que a mansão guarda um segredo escondido em um compartimento secreto. A pista está na biblioteca.</p>
+            <button class="btn-proximo" data-proximo="8">Voltar para a biblioteca</button>
+        </div>
+        <div class="passo" id="passo-7">
+            <p>Na mesa do escritório, você encontra uma carta que fala sobre um compartimento secreto na biblioteca.</p>
+            <button class="btn-proximo" data-proximo="8">Ir para a biblioteca</button>
+        </div>
+        <div class="passo" id="passo-8">
+            <p>Na biblioteca, você descobre um compartimento secreto atrás do livro fora do lugar. Dentro, há um mapa que leva a uma sala oculta na mansão.</p>
+            <button class="btn-proximo" data-proximo="14">Seguir o mapa para a sala oculta</button>
+        </div>
+        <div class="passo" id="passo-9">
+            <p>Você examina a biblioteca e encontra vários livros com anotações estranhas. Parece que alguém estava procurando por algo.</p>
+            <button class="btn-proximo" data-proximo="14">Seguir o mapa para a sala oculta</button>
+        </div>
+        <div class="passo" id="passo-10">
+            <p>O bilhete menciona um segredo escondido na biblioteca. Parece que você deve investigar mais a fundo.</p>
+            <button class="btn-proximo" data-proximo="8">Voltar para a biblioteca</button>
+        </div>
+        <div class="passo" id="passo-11">
+            <p>Você encontra um objeto suspeito, um candelabro com um botão secreto que abre um compartimento oculto. Dentro, há um mapa que leva à sala oculta.</p>
+            <button class="btn-proximo" data-proximo="14">Seguir o mapa para a sala oculta</button>
+        </div>
+        <div class="passo" id="passo-12">
+            <p>No quarto, você encontra várias pistas que indicam um segredo na biblioteca. Você decide voltar para investigar mais a fundo.</p>
+            <button class="btn-proximo" data-proximo="8">Voltar para a biblioteca</button>
+        </div>
+        <div class="passo" id="passo-13">
+            <p>Explorando o corredor, você encontra um quarto trancado com um código de segurança. Parece que você precisará de mais pistas para abrir a porta.</p>
+            <button class="btn-proximo" data-proximo="5">Voltar e explorar outros quartos</button>
+        </div>
+        <div class="passo" id="passo-14">
+            <p>Na sala oculta, você descobre documentos antigos e uma pista final sobre o desaparecimento. Com a solução em mãos, você consegue resolver o mistério da mansão.</p>
+            <img src="img/resolucao-misterio.png" alt="Resolução do mistério">
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
